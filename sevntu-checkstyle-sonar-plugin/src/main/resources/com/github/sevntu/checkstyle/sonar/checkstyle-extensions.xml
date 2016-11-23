@@ -896,4 +896,21 @@
     <description>Check nested (internal) classes to be declared at the bottom of the class after all methods (fields) declaration.</description>
     <configKey>Checker/TreeWalker/com.github.sevntu.checkstyle.checks.design.InnerClassCheck</configKey>
   </rule>
+
+  <rule>
+    <key>com.github.sevntu.checkstyle.checks.misc.NewlineCheck</key>
+    <name>Newline</name>
+    <category name="misc"/>
+    <description>Checks that only specific line terminators are used throughout an entire file.</description>
+    <configKey>Checker/com.github.sevntu.checkstyle.checks.misc.NewlineCheck</configKey>
+
+    <param key="lineSeparator" type="STRING">
+      <defaultValue>system</defaultValue>
+      <description>The line separator to check against.</description>
+    </param>
+    <param key="fileExtensions" type="STRING">
+      <defaultValue></defaultValue>
+      <description>The file extensions that are accepted by this filter.</description>
+    </param>
+  </rule>
 </rules>

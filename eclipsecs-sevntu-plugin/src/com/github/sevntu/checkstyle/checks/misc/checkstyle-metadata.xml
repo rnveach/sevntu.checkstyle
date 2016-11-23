@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE checkstyle-metadata PUBLIC
+"-//eclipse-cs//DTD Check Metadata 1.1//EN"
+"http://eclipse-cs.sourceforge.net/dtds/checkstyle-metadata_1_1.dtd">
+<checkstyle-metadata>
+  <rule-group-metadata name="SevNTU checks" priority="500">
+
+    <rule-metadata name="%NewlineCheck.name" internal-name="NewlineCheck" parent="TreeWalker">
+      <alternative-name internal-name="com.github.sevntu.checkstyle.checks.misc.NewlineCheck"/>
+      <description>%NewlineCheck.desc</description>
+
+      <property-metadata name="lineSeparator" datatype="String" default-value="system">
+        <description>%NewlineCheck.lineSeparator</description>
+      </property-metadata>
+      <property-metadata name="fileExtensions" datatype="String" default-value="">
+        <description>%NewlineCheck.fileExtensions</description>
+      </property-metadata>
+
+      <message-key key="invalid.newline"/>
+    </rule-metadata>
+
+  </rule-group-metadata>
+</checkstyle-metadata>

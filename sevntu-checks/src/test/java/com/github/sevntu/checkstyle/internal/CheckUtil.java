@@ -34,6 +34,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck;
+
 import com.google.common.collect.ImmutableSet;
 import com.google.common.reflect.ClassPath;
 import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
@@ -235,7 +237,8 @@ public final class CheckUtil {
     private static boolean isCheckstyleNonAbstractCheck(Class<?> loadedClass, String className) {
         return !Modifier.isAbstract(loadedClass.getModifiers()) && className.endsWith("Check")
                 && !className.contains("Input")
-                && AbstractCheck.class.isAssignableFrom(loadedClass);
+                && (AbstractCheck.class.isAssignableFrom(loadedClass)
+                        || AbstractFileSetCheck.class.isAssignableFrom(loadedClass));
     }
 
     /**

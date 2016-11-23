@@ -1,0 +1,3 @@
+/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/InputNewlineLfAtEndOfFile.java eol=lf
+/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/InputNewlineCrlfAtEndOfFile.java eol=crlf
+/sevntu-checks/src/test/resources/com/github/sevntu/checkstyle/checks/InputNewlineCrAtEndOfFile.java -text

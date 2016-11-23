@@ -190,6 +190,9 @@
     <module name="com.github.sevntu.checkstyle.checks.design.AvoidConditionInversion"/>
     <module name="com.github.sevntu.checkstyle.checks.design.CauseParameterInException"/>
 
+    <!-- Misc -->
+    <module name="com.github.sevntu.checkstyle.checks.misc.Newline"/>
+
     <!-- Naming -->
     <module name="com.github.sevntu.checkstyle.checks.naming.InterfaceTypeParameterName">
       <property name="format" value="^[A-Z]$"/>

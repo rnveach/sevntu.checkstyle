@@ -130,7 +130,14 @@ public final class ChecksTest {
             Assert.assertNotNull(moduleName + " requires a description in sonar", description);
 
             final Node configKey = XmlUtil.findElementByTag(children, "configKey");
-            final String expectedConfigKey = "Checker/TreeWalker/" + key;
+            final String expectedConfigKey;
+
+            if (AbstractFileSetCheck.class.isAssignableFrom(module)) {
+                expectedConfigKey = "Checker/" + key;
+            }
+            else {
+                expectedConfigKey = "Checker/TreeWalker/" + key;
+            }
 
             Assert.assertNotNull(moduleName + " requires a configKey in sonar", configKey);
             Assert.assertEquals(moduleName + " requires a valid configKey in sonar",

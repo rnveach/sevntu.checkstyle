@@ -18,7 +18,7 @@
     <suppress checks="NestedIfDepth|ReturnCount" files="UnnecessaryParenthesesExtendedCheck.java"/>
     <suppress checks="InnerAssignment" files="OverridableMethodInConstructorCheck.java"/>
     <suppress checks="BooleanExpressionComplexity" files="ForbidWildcardAsReturnTypeCheck.java"/>
-    <suppress checks="JavadocPackage" files="(LineLengthExtendedCheck|Utils).java"/>
+    <suppress checks="JavadocPackage" files="(NewlineCheck|LineLengthExtendedCheck|Utils).java"/>
     <suppress checks="LineLength" files=".*[\\/]src[\\/]test[\\/]"/>
     <suppress checks="AbstractClassName" files=".*[\\/]BaseCheckTestSupport\.java"/>
     <!-- END of legacy code -->
